@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Егор и Екатерина</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- рукописный -->
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+          rel="stylesheet">
+
+    <!-- основной -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <section class="hero-card">
+
+        <h1 class="names">
+            Егор и Екатерина
+        </h1>
+
+        <img class="hero-photo"
+             src="{{ url_for('static', filename='images/couple.jpg') }}"
+             alt="Егор и Екатерина">
+
+        <div class="calendar">
+
+            <h2>ИЮЛЬ</h2>
+
+            <div class="weekdays">
+                <span>ПН</span>
+                <span>ВТ</span>
+                <span>СР</span>
+                <span>ЧТ</span>
+                <span>ПТ</span>
+                <span>СБ</span>
+                <span>ВС</span>
+            </div>
+
+            <div class="days">
+
+                <span></span>
+                <span></span>
+
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+                <span>17</span>
+                <span>18</span>
+                <span>19</span>
+
+                <span>20</span>
+                <span>21</span>
+                <span>22</span>
+
+                <span class="wedding-day">
+				    <svg class="heart-bg" viewBox="0 0 32 29" aria-hidden="true">
+				        <path d="M23.6,0c-2.9,0-5.4,1.7-7.6,4.4C13.8,1.7,11.3,0,8.4,0
+				                 C3.8,0,0,3.8,0,8.4C0,17.1,16,29,16,29s16-11.9,16-20.6
+				                 C32,3.8,28.2,0,23.6,0z"/>
+				    </svg>
+
+				    <span class="day-number">23</span>
+				</span>
+
+                <span>24</span>
+                <span>25</span>
+                <span>26</span>
+
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+                <span>31</span>
+
+            </div>
+
+        </div>
+
+        <div class="countdown">
+
+            <div>
+                <span id="days">00</span>
+                <small>дней</small>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <small>часов</small>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <small>минут</small>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <small>секунд</small>
+            </div>
+
+        </div>
+
+        <section class="info-section fade-in">
+
+    <div class="info-card">
+        <div class="section-divider"></div>
+
+        <h2>Дорогой гость!</h2>
+
+        <p>
+            Мы рады сообщить Вам, что 23.07.2026 состоится самое главное
+            торжество в нашей жизни — день нашей свадьбы!
+        </p>
+
+        <p>
+            Приглашаем Вас разделить с нами радость этого незабываемого дня.
+        </p>
+
+        <img class="quote-photo"
+		     src="{{ url_for('static', filename='images/hug.jpg') }}"
+		     alt="Егор и Екатерина">
+
+		<p class="quote">
+		    Там, где посеяна любовь,<br>
+		    растёт радость.
+		</p>
+
+		<div class="couple-portraits">
+
+		    <div class="portrait">
+		        <img src="{{ url_for('static', filename='images/egor.jpg') }}"
+		             alt="Егор">
+
+		        <h3>Егор</h3>
+		    </div>
+
+		    <div class="portrait">
+		        <img src="{{ url_for('static', filename='images/katya.jpg') }}"
+		             alt="Екатерина">
+
+		        <h3>Екатерина</h3>
+		    </div>
+
+		</div>
+    </div>
+
+</section>
+
+
+<section class="timeline-section fade-in">
+
+    <h2>Свадебное расписание</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <div class="timeline-time">14:25</div>
+
+                <h3>Торжественная регистрация</h3>
+
+                <p>ЗАГС</p>
+
+                <small>
+                    У ЗАГСа приглашаем вас сделать памятные фотографии с нами
+                </small>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <div class="timeline-time">15:30</div>
+
+                <h3>Банкет</h3>
+
+                <p>ресторан «Библиотека»</p>
+
+                <small>
+                    ул. Батурина, 4
+                    <br><br>
+                    Время пролетит незаметно за фуршетом
+                    и общением с другими гостями.
+                </small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="info-section fade-in">
+
+    <div class="info-card">
+
+        <div class="icon">🍷</div>
+
+        <h2>Пожелания по подаркам</h2>
+
+        <p>
+            Ваше присутствие в день нашей свадьбы —
+            самый значимый подарок для нас!
+        </p>
+
+        <p>
+            Мы понимаем, что дарить цветы на свадьбу —
+            это традиция, но мы не сможем насладиться их красотой
+            в полной мере...
+        </p>
+
+        <p>
+            Будем рады любой другой альтернативе
+            (вино или в денежном эквиваленте).
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="info-section fade-in">
+
+    <div class="info-card">
+
+        <div class="icon">♡</div>
+
+        <h2>Примечание</h2>
+
+        <p>
+            Будем благодарны, если вы воздержитесь
+            от криков «Горько» на празднике.
+        </p>
+
+        <p>
+            Взамен лучше дарите нам улыбки,
+            добрые пожелания и яркие аплодисменты.
+        </p>
+
+        <p class="quote">
+            Пусть наш праздник будет не «горьким»,
+            а самым сладким!
+        </p>
+
+    </div>
+
+</section>
+
+    </section>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+
+</body>
+</html>
