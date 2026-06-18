@@ -381,3 +381,9 @@ body {
 
     transform: translateY(0);
 }
+
+.gift-icon {
+    display: block;
+    width: 152px;
+    margin: 0 auto 18px;
+}

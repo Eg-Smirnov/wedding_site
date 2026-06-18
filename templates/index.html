@@ -149,10 +149,10 @@
 		     src="{{ url_for('static', filename='images/hug.jpg') }}"
 		     alt="Егор и Екатерина">
 
-		<p class="quote">
+		<!-- <p class="quote">
 		    Там, где посеяна любовь,<br>
 		    растёт радость.
-		</p>
+		</p> -->
 
 		<div class="couple-portraits">
 
@@ -226,7 +226,12 @@
 
     <div class="info-card">
 
-        <div class="icon">🍷</div>
+        <!-- <div class="icon">🍷</div> -->
+
+        <img src="{{ url_for('static',
+        filename='images/gift.png') }}"
+             alt="Подарок"
+             class="gift-icon">
 
         <h2>Пожелания по подаркам</h2>
 

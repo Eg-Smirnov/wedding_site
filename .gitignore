@@ -1,0 +1,34 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask
+instance/
+.flaskenv
+
+# Логи
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Тесты и кеш
+.pytest_cache/
+.mypy_cache/
+
+# Переменные окружения
+.env
+
+# Gunicorn PID-файлы (если появятся)
+*.pid
